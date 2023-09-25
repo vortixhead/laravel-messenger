@@ -2,11 +2,11 @@
 
 namespace Cmgmyr\Messenger\Models;
 
-use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Winter\Storm\Database\Model;
 
-class Participant extends Eloquent
+class Participant extends Model
 {
     use SoftDeletes;
 

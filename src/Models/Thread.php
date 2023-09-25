@@ -3,13 +3,13 @@
 namespace Cmgmyr\Messenger\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use Winter\Storm\Database\Model;
 
 /**
  * @method static Builder|self between(array $participants)
@@ -17,7 +17,7 @@ use Illuminate\Support\Collection;
  * @method static Builder|self forUser(mixed $userId)
  * @method static Builder|self forUserWithNewMessages(mixed $userId)
  */
-class Thread extends Eloquent
+class Thread extends Model
 {
     use SoftDeletes;
 

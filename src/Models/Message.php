@@ -3,15 +3,15 @@
 namespace Cmgmyr\Messenger\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Winter\Storm\Database\Model;
 
 /**
  * @method static Builder|self unreadForUser(mixed $userId)
  */
-class Message extends Eloquent
+class Message extends Model
 {
     use SoftDeletes;
 
